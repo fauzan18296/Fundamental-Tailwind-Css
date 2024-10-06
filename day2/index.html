@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,9 @@
   </script>
   <title>Belajar TailwindCss-day-2</title>
   <style type="text/tailwindcss">
-
+    #toggle:checked ~ label div.toggle-circle {
+      @apply translate-x-5;
+    }
   </style>
 </head>
 <body class="dark:bg-slate-800 dark:text-slate-200">
@@ -62,12 +64,23 @@
 
 <hr class="my-20">
 
-<button class="block my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-inter mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300">Simpan</button>
+<div class="flex justify-center">
+  <span class="text-sm text-slate-500 mr-2">Light</span>
+  <input type="checkbox" id="toggle" class="hidden" />
+  <label for="toggle"> 
+    <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center">
+      <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+    </div>
+  </label>
+  <span class="text-sm text-slate-500 ml-2">Dark</span>
+</div>
 
-<div class="group max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-blue-400 font-serif">
-  <h5 class="font-bold text-slate-700 text-lg mb-3  group-hover:text-white">My Card</h5>
+<button class="block my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-inter mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100">Simpan</button>
+
+<div class="group max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-blue-400 font-serif dark:hover:bg-slate-300">
+  <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:group-hover:text-slate-800">My Card</h5>
   <p class="text-slate-600 group-hover:text-white selection:bg-lime-300 selection:text-slate-900
-  first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate accusamus alias repellendus maxime quis, exercitationem dolor illo distinctio numquam consequuntur inventore iste soluta hic. Temporibus repellendus blanditiis commodi ipsa voluptates.</p>
+  first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 dark:group-hover:text-slate-800">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate accusamus alias repellendus maxime quis, exercitationem dolor illo distinctio numquam consequuntur inventore iste soluta hic. Temporibus repellendus blanditiis commodi ipsa voluptates.</p>
 </div>
 
 <div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter">
@@ -82,5 +95,7 @@
 </div>
 
 <div class="mb-96"></div>
+
+<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
