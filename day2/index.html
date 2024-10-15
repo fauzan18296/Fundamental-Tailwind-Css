@@ -6,36 +6,37 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="./src/output.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <script>
-    tailwind.config = {
-    darkMode: 'class',
-      theme: {
-        extend: {
-         spacing:{
-          13:'3.25rem'
-         },
-         fontFamily: {
-          inter: ['inter'],
-         },
-         colors: {
-          wpu: '#bada55',
-          kopi: '#c0ffee',
-         },
-         animation: {
-          'spin-slow': 'spin 3s linear infinite',
-          'wiggle': 'wiggle .5s ease-in-out infinite'
-         },
-         keyframes: {
-          wiggle:{
-            '0, 100%': {
-              transform: 'rotate(-3deg)'},
-              '50%': { transform: 'rotate(3deg)' }
-          }
-         }
-        }
-      }
-    }
+    // tailwind.config = {
+    //   darkMode: 'class',
+    //   theme: {
+    //     extend: {
+    //      spacing:{
+    //       13:'3.25rem'
+    //      },
+    //      fontFamily: {
+    //       inter: ['inter'],
+    //      },
+    //      colors: {
+    //       wpu: '#bada55',
+    //       kopi: '#c0ffee',
+    //      },
+    //      animation: {
+    //       'spin-slow': 'spin 3s linear infinite',
+    //       'wiggle': 'wiggle .5s ease-in-out infinite'
+    //      },
+    //      keyframes: {
+    //       wiggle:{
+    //         '0, 100%': {
+    //           transform: 'rotate(-3deg)'},
+    //           '50%': { transform: 'rotate(3deg)' }
+    //       }
+    //      }
+    //     }
+    //   }
+    // }
   </script>
   <title>Belajar TailwindCss-day-2</title>
   <style type="text/tailwindcss">
@@ -228,46 +229,48 @@ sm:max-w-xl md:max-w-5xl max-[640px]:bg-sky-500 lg:flex lg:max-w-full lg:p-0">
   <h2 class="h-15 text-xl font-semibold text-slate-700 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Welcome to My Website</span></h2>
   <div class="h-15 text-lg font-bold text-slate-600 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">@ahmadfauzan</span></div>
 
-  <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-    <div class="w-full h-full bg-[url('./img/img1.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
+  <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500 -z-1">
+    <div class="w-full h-full bg-[url('./Img/img1.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
   </div>
 
   <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-     <div class="w-full h-full bg-[url('./img/1.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
+     <div class="w-full h-full bg-[url('./Img/1.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
   </div>
 
   <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-     <div class="w-full h-full bg-[url('./img/img2.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
+     <div class="w-full h-full bg-[url('./Img/img2.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
   </div>
 
   <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-     <div class="w-full h-full bg-[url('./img/3.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
+     <div class="w-full h-full bg-[url('./Img/3.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
   </div>
 
   <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-     <div class="w-full h-full bg-[url('./img/4.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
+     <div class="w-full h-full bg-[url('./Img/4.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
   </div>
 
   <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] md:col-start-2 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-     <div class="w-full h-full bg-[url('./img/7.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
+     <div class="w-full h-full bg-[url('./Img/7.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
   </div>
 
   <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] md:col-start-4 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-     <div class="w-full h-full bg-[url('./img/6.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
+     <div class="w-full h-full bg-[url('./Img/6.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
   </div>
 
   <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-500">
-     <div class="w-full h-full bg-[url('./img/5.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
+     <div class="w-full h-full bg-[url('./Img/5.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
   </div>
 
   <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-     <div class="w-full h-full bg-[url('./img/8.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
+     <div class="w-full h-full bg-[url('./Img/8.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
   </div>
 
   <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] md:col-start-3 overflow-hidden group relative hover:scale-95 transition-all duration-500">
-     <div class="w-full h-full bg-[url('./img/9.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
+     <div class="w-full h-full bg-[url('./Img/9.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12  transition-all duration-500"></div>
   </div>
 </div>
+
+<h1 class="text-center text-2xl text-pink-400">WPU</h1>
 
 <div class="mb-96"></div>
 
