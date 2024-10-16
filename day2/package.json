@@ -1,8 +1,10 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.4.14"
+  "devDependencies":
+  {"tailwindcss":"^3.4.14"},
+  "scripts":
+  {
+  "build:css":"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch --poll"
   },
-  "scripts": {
-    "watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch --poll"
-  }
-}
+  "dependencies":
+  {"autoprefixer":"^10.4.20",
+  "postcss":"^8.4.47"}}
